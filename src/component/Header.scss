@@ -1,0 +1,105 @@
+@use "../style/color.scss" as color;
+@use "../style/font.scss" as font;
+
+.header-container {
+    display: flex;
+    padding: 15px 10px;
+    margin: 0;
+    justify-content: flex-end;
+    text-decoration: none;
+    background-color: color.$black;
+
+    .header-listing {
+        padding: 0px 20px;
+        text-decoration: none;
+        list-style-type: none;
+    }
+
+    .header-heading {
+        text-decoration: none;
+        color: color.$white;
+    }
+
+    .header-button {
+        text-decoration: none;
+        color: color.$black;
+        border: 1px solid color.$white;
+        background-color: color.$white;
+        border-radius: 20px;
+        padding: 5px 10px;
+        cursor: pointer;
+    }
+
+    .header-button:hover {
+        color: color.$white;
+        background-color: color.$black;
+    }
+}
+
+.mobile-container {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .desktop-container {
+        display: none;
+    }
+
+    .mobile-container {
+        display: block;
+        text-align: end;
+        padding: 20px;
+        background-color: color.$black;
+    }
+
+
+    .toggle-button {
+        background-color: color.$black;
+        border: none;
+        color: color.$white;
+        font-size: 1rem;
+        font-weight: 600;
+    }
+
+    .header-container {
+        display: flex;
+        flex-direction: column;
+        text-decoration: none;
+        background-color: color.$black;
+        position: relative;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.5s ease-out;
+    }
+
+    .header-container.active {
+        max-height: 500px;
+        transition: max-height 0.5s ease-in;
+
+        .header-listing {
+            padding: 20px 0px;
+            text-decoration: none;
+            list-style-type: none;
+        }
+
+        .header-heading {
+            text-decoration: none;
+            color: color.$white;
+        }
+
+        .header-button {
+            text-decoration: none;
+            color: color.$black;
+            border: 1px solid color.$white;
+            background-color: color.$white;
+            border-radius: 20px;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+
+        .header-button:hover {
+            color: color.$white;
+            background-color: color.$black;
+        }
+    }
+}
