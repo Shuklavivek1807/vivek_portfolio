@@ -1,0 +1,22 @@
+.container-skill{
+    padding: 0rem 12rem;
+}
+
+.icon-container{
+    padding: 2rem 2rem;
+    display: flex;
+}
+
+@media (max-width: 768px) {
+    .container-skill{
+        padding: 0rem;
+    }
+    .mobile-icon-continer{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    .icon-container{
+        flex-direction: column;
+    }
+}

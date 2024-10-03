@@ -1,0 +1,18 @@
+.icon-card{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 5px;
+}
+
+.image-icon{
+    height: 15vh;
+}
+
+@media (max-width: 768px) {
+    .icon-card{
+        width: 20vw;
+    }
+}

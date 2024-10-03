@@ -1,0 +1,14 @@
+@use "../style/color.scss" as color;
+
+.heading-button{
+    padding: 10px 20px;
+    border: 3px solid black;
+    font-weight: 800;
+    background-color: transparent;
+}
+.heading-container{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem 0rem 1rem 0rem;
+}

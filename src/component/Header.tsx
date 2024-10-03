@@ -3,6 +3,8 @@ import React, { useState } from "react";
 import close  from "../assests/close.svg";
 import open from "../assests/open.svg"
 import HeroComponent from "./HeroComponent/HeroComponent";
+import AboutMe from "./AboutMe/AboutMe";
+import Skills from "./Skills/Skills";
 
 const Header: React.FC = () => {
 
@@ -50,6 +52,9 @@ const Header: React.FC = () => {
                     </ul>
                 }
             </div>
+            <HeroComponent/>
+            <AboutMe/>
+            <Skills/>
         </>
     )
 }
